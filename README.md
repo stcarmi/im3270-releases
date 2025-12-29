@@ -2,14 +2,16 @@
 
 Modern 3270 terminal emulator for Windows and Linux.
 
-## Download Latest Version (v0.43.0)
+## Download Latest Version (v0.43.6)
 
 | Platform | Download | Size |
 |----------|----------|------|
-| **Windows Installer** | [IM3270 Setup 0.43.0.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.0/IM3270.Setup.0.43.0.exe) | ~101 MB |
-| **Windows Portable** | [IM3270 0.43.0.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.0/IM3270.0.43.0.exe) | ~101 MB |
-| **Linux AppImage** | [IM3270-0.43.0.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.0/IM3270-0.43.0.AppImage) | ~121 MB |
-| **Linux tar.gz** | [im3270-0.43.0-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.0/im3270-0.43.0-linux.tar.gz) | ~120 MB |
+| **Windows Installer** | [IM3270 Setup 0.43.6.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.6/IM3270.Setup.0.43.6.exe) | ~101 MB |
+| **Windows Portable** | [IM3270 0.43.6.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.6/IM3270.0.43.6.exe) | ~101 MB |
+| **Linux AppImage** | [IM3270-0.43.6.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.6/IM3270-0.43.6.AppImage) | ~121 MB |
+| **Linux tar.gz** | [im3270-0.43.6-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.6/im3270-0.43.6-linux.tar.gz) | ~120 MB |
+
+**macOS**: Coming soon!
 
 ## Prerequisites
 
