@@ -2,14 +2,14 @@
 
 Modern 3270 terminal emulator for Windows and Linux.
 
-## Download Latest Version (v0.43.6)
+## Download Latest Version (v0.43.8)
 
 | Platform | Download | Size |
 |----------|----------|------|
-| **Windows Installer** | [IM3270 Setup 0.43.6.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.6/IM3270.Setup.0.43.6.exe) | ~101 MB |
-| **Windows Portable** | [IM3270 0.43.6.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.6/IM3270.0.43.6.exe) | ~101 MB |
-| **Linux AppImage** | [IM3270-0.43.6.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.6/IM3270-0.43.6.AppImage) | ~121 MB |
-| **Linux tar.gz** | [im3270-0.43.6-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.6/im3270-0.43.6-linux.tar.gz) | ~120 MB |
+| **Windows Installer** | [IM3270 Setup 0.43.8.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.8/IM3270.Setup.0.43.8.exe) | ~101 MB |
+| **Windows Portable** | [IM3270 0.43.8.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.8/IM3270.0.43.8.exe) | ~101 MB |
+| **Linux AppImage** | [IM3270-0.43.8.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.8/IM3270-0.43.8.AppImage) | ~121 MB |
+| **Linux tar.gz** | [im3270-0.43.8-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.8/im3270-0.43.8-linux.tar.gz) | ~120 MB |
 
 **macOS**: Coming soon!
 
@@ -41,16 +41,16 @@ sudo apt install x3270
 
 ## Documentation
 
-Visit [im3270.zos.co.il](https://im3270.zos.co.il) for full documentation.
+Visit [im3270.infomanta.com](https://im3270.infomanta.com) for full documentation.
 
 ## License
 
-IM3270 includes a **60-day free trial**. Purchase a license at [im3270.zos.co.il](https://im3270.zos.co.il).
+IM3270 includes a **60-day free trial**. Purchase a license at [im3270.infomanta.com](https://im3270.infomanta.com).
 
 ## Support
 
 - Email: support@infomanta.com
-- Website: [im3270.zos.co.il/support](https://im3270.zos.co.il/support.html)
+- Website: [im3270.infomanta.com/support](https://im3270.infomanta.com/support.html)
 
 ---
 
