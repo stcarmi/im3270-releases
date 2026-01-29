@@ -2,41 +2,72 @@
 
 Modern 3270 terminal emulator for Windows and Linux.
 
-## Download Latest Version (v0.43.8)
+## Download Latest Version (v0.43.14)
 
 | Platform | Download | Size |
 |----------|----------|------|
-| **Windows Installer** | [IM3270 Setup 0.43.8.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.8/IM3270.Setup.0.43.8.exe) | ~101 MB |
-| **Windows Portable** | [IM3270 0.43.8.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.8/IM3270.0.43.8.exe) | ~101 MB |
-| **Linux AppImage** | [IM3270-0.43.8.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.8/IM3270-0.43.8.AppImage) | ~121 MB |
-| **Linux tar.gz** | [im3270-0.43.8-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.8/im3270-0.43.8-linux.tar.gz) | ~120 MB |
+| **Windows Installer** | [IM3270 Setup 0.43.14.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270.Setup.0.43.14.exe) | ~101 MB |
+| **Windows Portable** | [IM3270 0.43.14.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270.0.43.14.exe) | ~101 MB |
+| **Linux AppImage** | [IM3270-0.43.14.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270-0.43.14.AppImage) | ~121 MB |
+| **Linux tar.gz** | [im3270-0.43.14-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/im3270-0.43.14-linux.tar.gz) | ~120 MB |
 
 **macOS**: Coming soon!
 
 ## Prerequisites
 
+### s3270 4.x Required
+
+IM3270 requires **s3270 version 4.0 or later**. Linux distro packages (`dnf install x3270-x11`, `apt install x3270`) install outdated v3.x which will **not work**.
+
 ### Windows
-- Install [wc3270](https://x3270.miraheze.org/wiki/Downloads) and ensure it's in your PATH
+- Download and install [wc3270 4.x](https://x3270.miraheze.org/wiki/Downloads) and ensure it's in your PATH
 
-### Linux (Fedora/RHEL)
+### Linux (all distros) - Build s3270 from source
 ```bash
-sudo dnf install x3270-x11
+# Install build dependencies
+sudo dnf install gcc make openssl-devel   # Fedora/RHEL
+# or: sudo apt install gcc make libssl-dev  # Ubuntu/Debian
+
+# Download and build s3270 4.x
+wget https://x3270.bgp.nu/download/04.04/suite3270-4.4ga6-src.tgz
+tar xzf suite3270-4.4ga6-src.tgz
+cd suite3270-4.4
+./configure && make s3270 && sudo make install.s3270
 ```
 
-### Linux (Ubuntu/Debian)
+Verify installation:
 ```bash
-sudo apt install x3270
+s3270 -version   # Should show 4.x
 ```
+
+### Linux AppImage
+```bash
+# AppImage requires FUSE
+sudo dnf install fuse fuse-libs   # Fedora/RHEL
+# or: sudo apt install fuse libfuse2  # Ubuntu/Debian
+```
+
+## Troubleshooting
+
+IM3270 writes a diagnostic log on every startup:
+```bash
+cat ~/.im3270/im3270.log
+```
+
+The log captures s3270 version checks, backend startup, and errors. Check this file if the app won't start or connect.
 
 ## Features
 
 - Multi-tab terminal sessions
-- Split screen mode
+- Split screen mode (side-by-side / top-bottom)
 - Macro recording and playback
 - File transfer (IND$FILE)
+- Paste to Data Area (Ctrl+Shift+V) for ISPF editor
 - Retro CRT display mode
 - Keystroke display for demos
 - SSL/TLS support
+- Profile manager with Quick Connect
+- Customizable keyboard shortcuts
 - And much more...
 
 ## Documentation
