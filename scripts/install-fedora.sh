@@ -1,0 +1,82 @@
+#!/bin/bash
+# IM3270 Installation Script for Fedora
+# Usage: curl -fsSL https://raw.githubusercontent.com/stcarmi/im3270-releases/main/scripts/install-fedora.sh | bash
+
+set -e
+
+# Colors for output
+YELLOW='\033[1;33m'
+RED='\033[1;31m'
+GREEN='\033[1;32m'
+NC='\033[0m' # No Color
+
+echo "=== IM3270 Installation for Fedora ==="
+echo
+echo -e "${YELLOW}LICENSE AGREEMENT${NC}"
+echo -e "${YELLOW}By installing this software, you agree to the End User License Agreement.${NC}"
+echo -e "${YELLOW}View full license: https://im3270.infomanta.com/about/license${NC}"
+echo -e "${YELLOW}Privacy Policy: https://im3270.infomanta.com/about/privacy${NC}"
+echo
+
+# Check/install s3270 4.x
+echo "Checking s3270..."
+S3270_VERSION=$(s3270 -version 2>&1 | grep -oP 'v\K[0-9]+\.[0-9]+' || echo "0")
+S3270_MAJOR=$(echo "$S3270_VERSION" | cut -d. -f1)
+
+if [ "$S3270_MAJOR" -lt 4 ] 2>/dev/null; then
+    echo -e "${RED}s3270 4.x is required. Distro packages install outdated v3.x.${NC}"
+    echo "Building s3270 4.x from source..."
+    sudo dnf install -y gcc make openssl-devel
+    cd /tmp
+    rm -rf suite3270-*
+    wget -q https://x3270.bgp.nu/download/04.04/suite3270-4.4ga6-src.tgz
+    tar xzf suite3270-4.4ga6-src.tgz
+    cd suite3270-4.4
+    ./configure --quiet && make s3270 --quiet && sudo make install.s3270
+    cd /tmp && rm -rf suite3270-*
+    echo -e "${GREEN}s3270 4.x installed successfully${NC}"
+else
+    echo -e "${GREEN}s3270 $S3270_VERSION found${NC}"
+fi
+
+# Install FUSE for AppImage
+sudo dnf install -y fuse fuse-libs 2>/dev/null || true
+
+# Create application directory
+INSTALL_DIR="$HOME/.local/share/im3270"
+mkdir -p "$INSTALL_DIR"
+mkdir -p "$HOME/.local/bin"
+
+# Download AppImage
+echo "Downloading IM3270..."
+RELEASE_URL="https://github.com/stcarmi/im3270-releases/releases/latest/download/IM3270-0.43.14.AppImage"
+curl -L -o "$INSTALL_DIR/IM3270.AppImage" "$RELEASE_URL" || {
+    echo -e "${RED}Failed to download IM3270. Check https://github.com/stcarmi/im3270-releases/releases${NC}"
+    exit 1
+}
+
+chmod +x "$INSTALL_DIR/IM3270.AppImage"
+
+# Create launcher script
+cat > "$HOME/.local/bin/im3270" << 'EOF'
+#!/bin/bash
+~/.local/share/im3270/IM3270.AppImage "$@"
+EOF
+chmod +x "$HOME/.local/bin/im3270"
+
+# Create desktop entry
+mkdir -p "$HOME/.local/share/applications"
+cat > "$HOME/.local/share/applications/im3270.desktop" << EOF
+[Desktop Entry]
+Name=IM3270
+Comment=3270 Terminal Emulator
+Exec=$HOME/.local/bin/im3270
+Icon=$INSTALL_DIR/IM3270.AppImage
+Terminal=false
+Type=Application
+Categories=Utility;TerminalEmulator;
+EOF
+
+echo
+echo "=== Installation Complete ==="
+echo "Run 'im3270' or find IM3270 in your application menu"
