@@ -2,23 +2,21 @@
 
 Modern 3270 terminal emulator for Windows and Linux.
 
-## Download Latest Version (v0.43.14)
+## Download Latest Version (v0.43.15)
 
 | Platform | Download | Size |
 |----------|----------|------|
-| **Windows Installer** | [IM3270 Setup 0.43.14.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270.Setup.0.43.14.exe) | ~100 MB |
-| **Windows Portable** | [IM3270 0.43.14.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270.0.43.14.exe) | ~100 MB |
-| **Linux tar.gz** | [im3270-0.43.14-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/im3270-0.43.14-linux.tar.gz) | ~119 MB |
-| **Linux AppImage** | [IM3270-0.43.14.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270-0.43.14.AppImage) | ~120 MB |
+| **Windows Installer** | [IM3270 Setup 0.43.15.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.15/IM3270.Setup.0.43.15.exe) | ~100 MB |
+| **Windows Portable** | [IM3270 0.43.15.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.15/IM3270.0.43.15.exe) | ~100 MB |
+| **Linux tar.gz** | [im3270-0.43.15-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.15/im3270-0.43.15-linux.tar.gz) | ~119 MB |
+| **Linux AppImage** | [IM3270-0.43.15.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.15/IM3270-0.43.15.AppImage) | ~120 MB |
 
 **macOS**: Coming soon!
 
-## What's New in v0.43.14
+## What's New in v0.43.15
 
-- Fix blank screen after exiting split mode
-- Fix split screen pane activation when clicking/typing in non-active pane
-- Fix Quick Connect Tab key navigation
-- Fix close tab behavior in split mode
+- Fix ISPF Option 11 (Workplace) fields misaligned and cursor positioned one letter ahead
+- 2-byte UTF-8 characters (like ¦) were not rendered, causing field display issues
 
 ## Prerequisites
 
