@@ -2,21 +2,20 @@
 
 Modern 3270 terminal emulator for Windows and Linux.
 
-## Download Latest Version (v0.43.15)
+## Download Latest Version (v0.43.16)
 
 | Platform | Download | Size |
 |----------|----------|------|
-| **Windows Installer** | [IM3270 Setup 0.43.15.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.15/IM3270.Setup.0.43.15.exe) | ~100 MB |
-| **Windows Portable** | [IM3270 0.43.15.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.15/IM3270.0.43.15.exe) | ~100 MB |
-| **Linux tar.gz** | [im3270-0.43.15-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.15/im3270-0.43.15-linux.tar.gz) | ~119 MB |
-| **Linux AppImage** | [IM3270-0.43.15.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.15/IM3270-0.43.15.AppImage) | ~120 MB |
+| **Windows Installer** | [IM3270 Setup 0.43.16.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.16/IM3270.Setup.0.43.16.exe) | ~100 MB |
+| **Windows Portable** | [IM3270 0.43.16.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.16/IM3270.0.43.16.exe) | ~100 MB |
+| **Linux tar.gz** | [im3270-0.43.16-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.16/im3270-0.43.16-linux.tar.gz) | ~119 MB |
+| **Linux AppImage** | [IM3270-0.43.16.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.16/IM3270-0.43.16.AppImage) | ~120 MB |
 
 **macOS**: Coming soon!
 
-## What's New in v0.43.15
+## What's New in v0.43.16
 
-- Fix ISPF Option 11 (Workplace) fields misaligned and cursor positioned one letter ahead
-- 2-byte UTF-8 characters (like ¦) were not rendered, causing field display issues
+- Fix Profile Manager: clicking a profile caused Save to update instead of creating a new one
 
 ## Prerequisites
 
