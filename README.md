@@ -16,6 +16,8 @@ Modern 3270 terminal emulator for Windows and Linux.
 ## What's New in v0.43.16
 
 - Fix Profile Manager: clicking a profile caused Save to update instead of creating a new one
+- Fix Profile Manager: no longer auto-selects first profile on open
+- Profile Manager: renamed "Cancel" to "New" button for clarity
 
 ## Prerequisites
 
