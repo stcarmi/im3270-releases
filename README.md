@@ -6,12 +6,19 @@ Modern 3270 terminal emulator for Windows and Linux.
 
 | Platform | Download | Size |
 |----------|----------|------|
-| **Windows Installer** | [IM3270 Setup 0.43.14.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270.Setup.0.43.14.exe) | ~101 MB |
-| **Windows Portable** | [IM3270 0.43.14.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270.0.43.14.exe) | ~101 MB |
-| **Linux AppImage** | [IM3270-0.43.14.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270-0.43.14.AppImage) | ~121 MB |
-| **Linux tar.gz** | [im3270-0.43.14-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/im3270-0.43.14-linux.tar.gz) | ~120 MB |
+| **Windows Installer** | [IM3270 Setup 0.43.14.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270.Setup.0.43.14.exe) | ~100 MB |
+| **Windows Portable** | [IM3270 0.43.14.exe](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270.0.43.14.exe) | ~100 MB |
+| **Linux tar.gz** | [im3270-0.43.14-linux.tar.gz](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/im3270-0.43.14-linux.tar.gz) | ~119 MB |
+| **Linux AppImage** | [IM3270-0.43.14.AppImage](https://github.com/stcarmi/im3270-releases/releases/download/v0.43.14/IM3270-0.43.14.AppImage) | ~120 MB |
 
 **macOS**: Coming soon!
+
+## What's New in v0.43.14
+
+- Fix blank screen after exiting split mode
+- Fix split screen pane activation when clicking/typing in non-active pane
+- Fix Quick Connect Tab key navigation
+- Fix close tab behavior in split mode
 
 ## Prerequisites
 
