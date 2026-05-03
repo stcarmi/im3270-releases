@@ -1,6 +1,6 @@
 #!/bin/bash
 # IM3270 Installation Script for Fedora
-# Usage: curl -fsSL https://raw.githubusercontent.com/stcarmi/im3270-releases/main/scripts/install-fedora.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/Infomanta/im3270-releases/main/scripts/install-fedora.sh | bash
 
 set -e
 
@@ -49,9 +49,9 @@ mkdir -p "$HOME/.local/bin"
 
 # Download AppImage
 echo "Downloading IM3270..."
-RELEASE_URL="https://github.com/stcarmi/im3270-releases/releases/latest/download/IM3270-0.43.14.AppImage"
+RELEASE_URL="https://github.com/Infomanta/im3270-releases/releases/latest/download/IM3270-0.43.14.AppImage"
 curl -L -o "$INSTALL_DIR/IM3270.AppImage" "$RELEASE_URL" || {
-    echo -e "${RED}Failed to download IM3270. Check https://github.com/stcarmi/im3270-releases/releases${NC}"
+    echo -e "${RED}Failed to download IM3270. Check https://github.com/Infomanta/im3270-releases/releases${NC}"
     exit 1
 }
 
