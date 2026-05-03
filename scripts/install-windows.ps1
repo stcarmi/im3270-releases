@@ -74,7 +74,7 @@ if ($currentPath -notlike "*$wc3270Dir*") {
 
 # Download IM3270 installer
 Write-Host "Downloading IM3270 installer..." -ForegroundColor Cyan
-$installerUrl = "https://github.com/Infomanta/im3270-releases/releases/latest/download/IM3270.Setup.0.43.14.exe"
+$installerUrl = "https://github.com/Infomanta/im3270-releases/releases/latest/download/IM3270.Setup.0.46.9.exe"
 $installerPath = "$env:TEMP\IM3270-Setup.exe"
 
 Invoke-WebRequest -Uri $installerUrl -OutFile $installerPath
