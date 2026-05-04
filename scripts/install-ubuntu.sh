@@ -59,7 +59,7 @@ mkdir -p "$HOME/.local/bin"
 
 # Download AppImage
 echo "Downloading IM3270..."
-RELEASE_URL="https://github.com/Infomanta/im3270-releases/releases/latest/download/IM3270-0.46.9.AppImage"
+RELEASE_URL="https://github.com/Infomanta/im3270-releases/releases/latest/download/IM3270-0.46.10.AppImage"
 curl -L -o "$INSTALL_DIR/IM3270.AppImage" "$RELEASE_URL" || {
     echo -e "${RED}Failed to download IM3270. Check https://github.com/Infomanta/im3270-releases/releases${NC}"
     exit 1
