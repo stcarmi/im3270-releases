@@ -1,23 +1,23 @@
 # IM3270 Releases
 
-## Latest Release: v0.46.10
+## Latest Release: v0.46.11
 
 Download the latest version from GitHub Releases:
 
-**[Download v0.46.10](https://github.com/Infomanta/im3270-releases/releases/tag/v0.46.10)**
+**[Download v0.46.11](https://github.com/Infomanta/im3270-releases/releases/tag/v0.46.11)**
 
 ### Available Downloads
 
 | Platform | File | Description |
 |----------|------|-------------|
-| Linux | [im3270-0.46.10-linux.tar.gz](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.10/im3270-0.46.10-linux.tar.gz) | Installation package with script |
-| Linux | [IM3270-0.46.10.AppImage](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.10/IM3270-0.46.10.AppImage) | Standalone AppImage |
-| Debian/Ubuntu | [im3270_0.46.10_amd64.deb](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.10/im3270_0.46.10_amd64.deb) | DEB package |
-| Fedora/RHEL | [im3270-0.46.10.x86_64.rpm](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.10/im3270-0.46.10.x86_64.rpm) | RPM package |
-| Windows | [IM3270 Setup 0.46.10.exe](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.10/IM3270.Setup.0.46.10.exe) | Windows Installer |
-| Windows | [IM3270 0.46.10.exe](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.10/IM3270.0.46.10.exe) | Windows Portable |
-| Verify | [SHA256SUMS](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.10/SHA256SUMS) | Checksums |
-| Verify | [SHA256SUMS.asc](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.10/SHA256SUMS.asc) | GPG signature |
+| Linux | [im3270-0.46.11-linux.tar.gz](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.11/im3270-0.46.11-linux.tar.gz) | Installation package with script |
+| Linux | [IM3270-0.46.11.AppImage](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.11/IM3270-0.46.11.AppImage) | Standalone AppImage |
+| Debian/Ubuntu | [im3270_0.46.11_amd64.deb](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.11/im3270_0.46.11_amd64.deb) | DEB package |
+| Fedora/RHEL | [im3270-0.46.11.x86_64.rpm](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.11/im3270-0.46.11.x86_64.rpm) | RPM package |
+| Windows | [IM3270 Setup 0.46.11.exe](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.11/IM3270.Setup.0.46.11.exe) | Windows Installer |
+| Windows | [IM3270 0.46.11.exe](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.11/IM3270.0.46.11.exe) | Windows Portable |
+| Verify | [SHA256SUMS](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.11/SHA256SUMS) | Checksums |
+| Verify | [SHA256SUMS.asc](https://github.com/Infomanta/im3270-releases/releases/download/v0.46.11/SHA256SUMS.asc) | GPG signature |
 
 ### Verify Downloads
 
